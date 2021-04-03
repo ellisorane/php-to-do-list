@@ -1,0 +1,232 @@
+body {
+  background-color: #f0d9cf;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  min-height: 100vh;
+}
+
+* {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+* a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  font-size: 25px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.signup-error, .login-error {
+  color: rgb(255, 49, 49);
+}
+
+header {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  background-color: #fac096;
+  border-radius: 15px;
+  box-shadow: 4px 16px 19px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 16px 19px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 16px 19px -5px rgba(0, 0, 0, 0.75);
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.greeting {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-task-div {
+  margin-top: 50px;
+}
+
+.add-task a {
+  padding: 0 25px;
+
+}
+
+.add-task {
+  margin: auto;
+  border: 1px solid white;
+  outline: none;
+  background-color: #ffc295;
+  display: block;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 30px;
+  transition: all 0.3s;
+  -webkit-box-shadow: 3px 19px 25px -12px #000000;
+  box-shadow: 3px 19px 25px -12px #000000;
+}
+
+.add-task:hover {
+  background-color: #f1924e;
+}
+
+.container {
+  padding: 20px 0;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 35px;
+}
+
+.tasks {
+  min-height: 600px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.tasks-list {
+  margin: 0;
+  padding: 0;
+}
+
+.completed-tasks {
+  padding: 10px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 19px 18px -21px #000000;
+  box-shadow: 0px 19px 18px -21px #000000;
+}
+
+.task {
+  margin: 15px 0;
+  background-color: #ffffff;
+  padding: 20px 15px;
+  border-radius: 15px;
+}
+
+.task-right {
+  float: right;
+}
+
+.priority {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+.high-priority {
+  background-color: rgb(250, 109, 43);
+}
+
+.regular-priority {
+  background-color: rgb(89, 235, 31);
+}
+
+.btn {
+  background-color: #ffc295;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff8b39;
+  color: white;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ADD_TASK_FORM.CSS///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.form-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.submit-task-btn {
+  margin-top: 20px;
+  background-color: #ec8d49;
+}
+
+form,
+input,
+select {
+  font-size: 25px;
+  outline: none;
+}
+
+form input {
+  width: 50%;
+}
+
+input,
+select {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+
+
+/* SMALLER SCREENS ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* SMALLER SCREENS ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* SMALLER SCREENS ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 1025px) {
+
+  .container {
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tasks {
+    min-height: auto;
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+  }
+
+}
+
+@media (max-width: 600px) { 
+
+  .container {
+    padding: 20px 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  .tasks {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .task {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .task-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .task-btn {
+    margin: 5px 0;
+  }
+}
